@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: DecompData_Debugging
   m_EditorClassIdentifier: 
   DebugMode: 1
-  YCTP: 0
+  YCTP: 1
   baldicator: 1
   swapItems: 1
   maxNotebooks: 7
   startingNotebooks: 0
   startingFailedNotebooks: 0
   maxStamina: 100
+  UseExperiments: 1
+  UseBASICController: 0

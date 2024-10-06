@@ -12,7 +12,7 @@ public class SwingingDoorScript : MonoBehaviour
 
     private void Update()
     {
-        if (!this.requirementMet & this.gc.notebooks >= 2)
+        if (!this.requirementMet & this.gc.notebooks >= 0)
         {
             this.requirementMet = true;
             this.UnlockDoor();
@@ -50,7 +50,7 @@ public class SwingingDoorScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!(this.gc.notebooks < 2 & other.tag == "Player"))
+        if (!(this.gc.notebooks < 0 & other.tag == "Player"))
         {
             if (!this.bDoorLocked)
             {

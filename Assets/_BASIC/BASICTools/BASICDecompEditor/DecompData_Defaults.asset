@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DebugMode: 0
   YCTP: 1
+  baldicator: 1
+  swapItems: 1
   maxNotebooks: 7
   startingNotebooks: 0
   startingFailedNotebooks: 0
   maxStamina: 100
+  UseExperiments: 0
+  UseBASICController: 0

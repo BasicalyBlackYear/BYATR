@@ -7,7 +7,7 @@ public class NeedMoreScript : MonoBehaviour
 	
 	private void OnTriggerEnter(Collider other)
 	{
-		if (this.gc.notebooks < 2 & other.tag == "Player")
+		if (this.gc.notebooks < 0 & other.tag == "Player")
 		{
 			this.audioDevice.PlayOneShot(this.baldiDoor, 1f);
 		}
