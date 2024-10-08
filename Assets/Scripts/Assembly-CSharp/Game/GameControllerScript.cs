@@ -100,14 +100,10 @@ public class GameControllerScript : Singleton<GameControllerScript>
 				if (!this.gamePaused)
 				{
 					this.PauseGame();
-					this.schoolMusic.Stop();
-					this.pauseMusic.Play();
 				}
 				else
 				{
 					this.UnpauseGame();
-					this.schoolMusic.Play();
-					this.pauseMusic.Stop();
 				}
 			}
 			if (Input.GetKeyDown(KeyCode.Y) & this.gamePaused)
@@ -205,11 +201,11 @@ public class GameControllerScript : Singleton<GameControllerScript>
 	{
 		if (this.mode == "story")
 		{
-			this.notebookCount.text = this.notebooks.ToString() + $"/{settingsProfile.maxNotebooks} Sketchbooks";
+			this.notebookCount.text = this.notebooks.ToString() + $"/{settingsProfile.maxNotebooks} Notebooks";
 		}
 		else
 		{
-			this.notebookCount.text = this.notebooks.ToString() + " Sketchbooks";
+			this.notebookCount.text = this.notebooks.ToString() + " Notebooks";
 		}
 		if (this.notebooks == settingsProfile.maxNotebooks & this.mode == "story")
 		{
@@ -816,8 +812,4 @@ public class GameControllerScript : Singleton<GameControllerScript>
 
 	
 	public AudioSource learnMusic;
-	
-	public AudioSource pauseMusic;
-
-	public Camera PlayerCamera;
 }
